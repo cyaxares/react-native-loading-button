@@ -6,7 +6,8 @@ import {
     View,
     TouchableOpacity,
     Animated,
-    ActivityIndicator
+    ActivityIndicator,
+    Dimensions
 } from 'react-native';
 var {height, width} = Dimensions.get('window');
 export default class LoadingButton extends Component{
