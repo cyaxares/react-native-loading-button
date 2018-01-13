@@ -71,7 +71,7 @@ LoadingButton.defaultProps = {
     activityIndicatorColor: '#FFF',
     activityIndicatorSize: 'small',
     viewStyle: {
-        width: this.props.width,
+        width: 100,
         height: 30,
         backgroundColor: '#25CED1',
         borderRadius: 20
