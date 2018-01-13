@@ -49,7 +49,7 @@ export default class LoadingButton extends Component{
         return (
             <Animated.View style={[this.props.viewStyle, {width: this.props.enableWidthAnimation ? this.defaultLoadingValue.width : this.props.viewStyle.width}]}>
                 <TouchableOpacity onPress={()=>{this.props.onPress()}} style={[styles.defaultLoadingTouch, {width: this.props.enableWidthAnimation ? styles.defaultLoadingTouch.width : this.props.viewStyle.width}]}>
-                    {this.props.isLoading ? this.loadingContent() : this.props.childView || <Text style={styles.defaultLoadingText}>{this.props.text</Text>}
+                    {this.props.isLoading ? this.loadingContent() : this.props.childView || <Text style={styles.defaultLoadingText}>{this.props.text}</Text>}
                 </TouchableOpacity>
             </Animated.View>
         )
