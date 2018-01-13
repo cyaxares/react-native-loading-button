@@ -6,10 +6,8 @@ import {
     View,
     TouchableOpacity,
     Animated,
-    ActivityIndicator,
-    Dimensions
+    ActivityIndicator
 } from 'react-native';
-var {height, width} = Dimensions.get('window');
 export default class LoadingButton extends Component{
 
     constructor(props){
@@ -73,7 +71,7 @@ LoadingButton.defaultProps = {
     activityIndicatorColor: '#FFF',
     activityIndicatorSize: 'small',
     viewStyle: {
-        width: width-30,
+        width: this.props.width,
         height: 30,
         backgroundColor: '#25CED1',
         borderRadius: 20
